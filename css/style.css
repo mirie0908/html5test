@@ -1,0 +1,147 @@
+@charset "utf-8";
+body {
+    margine: 0;
+    padding: 0;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 { margine-top: 0; }
+p {
+    margine-top: 0;
+    line-height: 1.6;
+}
+img { vertical-align: bottom; }
+
+#main h1 {
+    padding: 30px 30px 30px 20px;
+    font-size: 26px;
+    border-bottom: solid 1px #8b7348;
+}
+#main h2 {
+    font-size: 22px;
+    border: 1px solid #b7a077;
+    padding: 111px 22px;
+    border-radius: 5px;
+}
+#main h3 {
+    font-size: 18px;
+    border-left: solid 3px #b7a077;
+    padding: 4px 9px 4px 14px;
+}
+// Lession 40 幅を設定してヘッダーエリアを整える
+header {
+    width: 980px;
+    margin: 0 auto;
+}
+// サイトロゴ、浮かせて左に寄せ　上、右(=0))、下のマージン調整
+header h1 {
+    float: left;
+    margin: 5px 0 10px;
+}
+// お問い合わせボタンを浮かせて右に寄せ、上のマージン調製
+header #header_contact {
+    float: right;
+    margin: 35px 0 0;
+}
+// Lession 41 ヘッダー内グローバルナビゲーション基本枠
+#global_navi {
+    width: 980px;
+    clear: both;
+    overflow: hidden;
+    margin: 16px auto;
+}
+// リストの行頭アイコンを消す
+#global_navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#global_navi ul li {
+    width: 195px;
+    float: left;
+    margin-right: 1px;
+    text-align: center;
+}
+#global_navi ul li a {
+    display: black;
+    padding: 16px;
+    background-color: #352b23;
+    color: #fff;
+    text-decoration: none;
+}
+#global_navi ul li.current a {
+    background-color: #b7a077;
+}
+#global_navi ul li a:hover {
+    background-color: #8c7a5b;
+}
+// Lession 42 メイン部分を２段組
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;/* 教本p.147 */
+}
+#main {
+    width: 730px;
+    float: left;
+}
+#sidebar {
+    width: 220px;
+    float: right;
+}
+// Lession 43 サイドバーエリアを整える
+// バナーエリア下にマージン
+#side_banner { margin-bottom: 30px; }
+// 関連リンクの見出しを整える
+#side_banner h2 {
+    background-color: #716961;
+    color: #fff;
+    padding: 7px;
+    font-size: 14px;
+    text-align: center;
+}
+// バナー画像のリスト記号を消す
+#side_banner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#side_banner ul li { margin-bottom: 10px; }
+// お問い合わせエリアを整える
+#side_contact { margin-bottom: 30px; }
+#side_contact {
+    border: 1px solid #b7a077;
+    color: #7F7259;
+    text-align: center;
+}
+//　お知らせエリアの見出しを装飾する
+#side_contact h2 {
+    background-color: #b7a077;
+    color: #fff;
+    padding: 7px;
+    font-size: 14px;
+}
+// 電話番号を目立たせる
+#side_contact address {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+}
+#side_contact address img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+// Lession 44 グラデーション利用して立体的ボタン
+// グラデーションを設定
+#side_contact .contact_button {
+    display: inline-block;
+    background: #f1ede4;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1ede4));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1ede4 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#f1ede4 100%);
+    color: #b7a077;
+    padding: 10px;
+    border: 1px solid #b7a077;
+    border-radius: 5px;
+    text-decoration: none;
+}
+// 角丸やボーダを設定
